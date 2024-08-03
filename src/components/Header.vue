@@ -21,7 +21,7 @@ export default {
   name: 'cmp-header',
   props: {
     msg: String
-  }
+  },
 }
 </script>
 

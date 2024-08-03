@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import { createHead } from '@unhead/vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/style/common.css';
@@ -15,9 +16,15 @@ import './assets/style/common.css';
 // } from "@fortawesome/free-solid-svg-icons";
 // library.add(faUser, faAddressCard, faSquarePen, faEnvelope);
 
-createApp(App)
-// .component('font-awesome-icon', FontAwesomeIcon)
-.mount('#app')
+const app = createApp(App)
+
+// Vue3のOption APIではmixinの登録が必要
+// https://blog.kurodigi.com/posts/vue3-custom-head
+const head = createHead()
+app.use(head)
+
+// app.component('font-awesome-icon', FontAwesomeIcon)
+app.mount('#app')
 
 // パターン1
 // createApp(App).mount('#app')
