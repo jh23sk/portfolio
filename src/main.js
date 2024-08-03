@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import vuetify from "./assets/js/vuetify";
 import { createHead } from '@unhead/vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -17,6 +18,7 @@ import {
 library.add(faUser, faAddressCard, faSquarePen, faEnvelope);
 
 const app = createApp(App)
+app.use(vuetify)
 
 // Vue3のOption APIではmixinの登録が必要
 // https://blog.kurodigi.com/posts/vue3-custom-head
