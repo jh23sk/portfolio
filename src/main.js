@@ -5,16 +5,16 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './assets/style/common.css';
 
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-// import {
-//   faUser,
-//   faAddressCard,
-//   faSquarePen,
-//   faEnvelope,
-// } from "@fortawesome/free-solid-svg-icons";
-// library.add(faUser, faAddressCard, faSquarePen, faEnvelope);
+import {
+  faUser,
+  faAddressCard,
+  faSquarePen,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faUser, faAddressCard, faSquarePen, faEnvelope);
 
 const app = createApp(App)
 
@@ -23,7 +23,7 @@ const app = createApp(App)
 const head = createHead()
 app.use(head)
 
-// app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
 
 // パターン1
