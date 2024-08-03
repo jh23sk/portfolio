@@ -1,7 +1,7 @@
 <template>
   <!-- https://pictogrammers.com/library/mdi/icon/monitor/ -->
   <v-col cols="12">
-    <v-card class="mx-auto m-3" width="500" prepend-icon="mdi-monitor">
+    <v-card class="mx-auto m-3" width="400" prepend-icon="mdi-monitor">
       <template v-slot:title>
         {{ cardType.title }}
       </template>
