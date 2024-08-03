@@ -1,11 +1,11 @@
 <template>
   <!-- https://pictogrammers.com/library/mdi/icon/monitor/ -->
-  <v-card class="mx-auto" width="500" prepend-icon="mdi-monitor">
+  <v-card class="mx-auto m-3" width="500" prepend-icon="mdi-monitor">
     <template v-slot:title>
-      {{ title }}
+      {{ cardType.title }}
     </template>
     <v-card-text>
-      <p class="text">{{ explain }}</p>
+      <p class="text">{{ cardType.explain }}</p>
       <table class="table">
         <thead>
           <tr>
@@ -15,7 +15,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(item, index) in items" :key="index">
+          <tr v-for="(item, index) in cardType.items" :key="index">
             <td>{{ item.tech }}</td>
             <td>{{ item.years }}</td>
             <td>
@@ -39,24 +39,27 @@
 export default {
   name: 'cmp-card-skill',
   props: {
-    title: String,
-    explain: String,
-    items: [
-      {
-        tech: String,
-        years: String,
-        level: String,
-      }
-    ],
+    // title: String,
+    // explain: String,
+    // items: [
+    //   {
+    //     tech: String,
+    //     years: String,
+    //     level: String,
+    //   }
+    // ],
+    cardType : {
+      title: String,
+      explains: String,
+      items: [
+        {
+          tech: String,
+          years: String,
+          level: String,
+        }
+      ]
+    }
   },
-  // data() {
-  //   return {
-  //     items: [
-  //       { tech: "HTML", years: "3年半", level: 3 },
-  //       { tech: "CSS", years: "3年半", level: 3 },
-  //     ],
-  //   };
-  // },
 }
 </script>
 
