@@ -6,9 +6,9 @@
     </div>
     <nav id="gnav">
       <ul>
-        <li><i class="fa-solid fa-address-card"><a href="#Profile">PROFILE</a></i></li>
-        <li><i class="fa-solid fa-square-pen"><a href="#skill">SKILL</a></i></li>
-        <li><i class="fa-solid fa-envelope"><a href="#contact">CONTACT</a></i></li>
+        <li><i class="fa-solid fa-address-card"></i><a href="#Profile">PROFILE</a></li>
+        <li><i class="fa-solid fa-square-pen"></i><a href="#skill">SKILL</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="#contact">CONTACT</a></li>
         <!-- <li><font-awesome-icon icon="fa-solid fa-address-card"/><a href="#Profile">PROFILE</a></li>
         <li><font-awesome-icon icon="fa-solid fa-square-pen"/><a href="#skill">SKILL</a></li>
         <li><font-awesome-icon icon="fa-solid fa-envelope"/><a href="#contact">CONTACT</a></li> -->
