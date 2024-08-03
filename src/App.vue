@@ -9,7 +9,6 @@
 import Header from './components/Header.vue'
 import Profile from './components/Profile.vue';
 import Skill from './components/Skill.vue';
-// import sample from './components/sample.vue'
 // import { useHead } from '@unhead/vue'
 
 export default {
@@ -18,7 +17,6 @@ export default {
     Header,
     Profile,
     Skill,
-    // sample
   },
 }
 
