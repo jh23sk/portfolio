@@ -1,15 +1,17 @@
 <template>
-  <!-- <img alt="愛猫のごましおです" src="./assets/profile.png"> -->
   <Header msg="Kotomi Sasaki's Portfolio"/>
+  <!-- <sample msg="Kotomi Sasaki's Portfolio"/> -->
 </template>
 
 <script>
 import Header from './components/Header.vue'
+// import sample from './components/sample.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    // sample
   }
 }
 </script>
