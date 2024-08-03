@@ -1,7 +1,4 @@
 <template>
-  <!-- <head>
-    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
-  </head> -->
   <Header msg="Kotomi Sasaki's Portfolio"/>
   <!-- <sample msg="Kotomi Sasaki's Portfolio"/> -->
 </template>
