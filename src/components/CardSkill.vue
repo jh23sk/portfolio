@@ -2,7 +2,7 @@
   <!-- 【mdi一覧】https://pictogrammers.com/library/mdi/icon/monitor/ -->
   <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <!-- <v-col cols="12" class="mx-3"> -->
-  <v-container>
+  <v-container class="px-0">
     <!-- <v-card class="mx-auto" variant="outlined" width="550" :prepend-icon="cardType.icon"> -->
     <v-card v-resize="onResize" class="mx-auto bg-light" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
       <template v-slot:title>{{ cardType.title }}</template>
