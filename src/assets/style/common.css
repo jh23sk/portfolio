@@ -34,7 +34,7 @@ br.sp-only {
 }
 
 #gnav li {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 20px;
   /* padding: 0 20px; */
 }
