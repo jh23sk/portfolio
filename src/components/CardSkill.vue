@@ -1,13 +1,13 @@
 <template>
-  <!-- 【mdi一覧】https://pictogrammers.com/library/mdi/icon/monitor/ -->
+  <!-- 【mdi一覧】https://pictogrammers.com/library/mdi/ -->
   <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <v-container>
     <!-- <v-card v-resize="$emit('onResize')" class="mx-auto bg-light" max-width="500" variant="outlined" :prepend-icon="cardType.icon"> -->
     <v-card class="mx-auto bg-white" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
-      <template v-slot:title>{{ cardType.title }}</template>
+      <template v-slot:title><span class="fw-bold">{{ cardType.title }}</span></template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <table class="table table-sm m-0 table-bordered">
+        <table class="table table-sm m-0">
         <!-- <v-table> --><!-- これ使うと、テーブルの下に横スクロールのバーが出る -->
           <thead class="table-secondary">
             <tr>
