@@ -1,3 +1,29 @@
+/* .pc-only {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .pc-only {
+      display: block;
+  }
+} */
+
+br.pc-only {
+  display: inline;
+}
+br.sp-only {
+  display: none;
+}
+
+@media screen and (max-width: 750px){
+  br.pc-only {
+      display: none;
+  }
+  br.sp-only {
+      display: inline;
+  }
+}
+
 /* #gnav {
   padding: 10px;
   font-family: 'Open sans', sans-serif;
