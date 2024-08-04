@@ -3,14 +3,13 @@
   <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <!-- <v-col cols="12" class="mx-3"> -->
   <v-container>
-    <v-card class="mx-auto" variant="outlined" width="550" :prepend-icon="cardType.icon">
-    <!-- <v-card class="mx-auto w-50" variant="outlined" :prepend-icon="cardType.icon"> -->
-    <!-- <v-card v-resize="onResize" class="mx-auto" width="400" prepend-icon="mdi-monitor"> -->
+    <!-- <v-card class="mx-auto" variant="outlined" width="550" :prepend-icon="cardType.icon"> -->
+    <v-card v-resize="onResize" class="mx-auto" max-width="500" :prepend-icon="cardType.icon">
       <template v-slot:title>{{ cardType.title }}</template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <!-- <table class="table"> -->
-        <v-table>
+        <table class="table">
+        <!-- <v-table> -->
           <thead>
             <tr>
               <th scope="col" class="text-center">技術</th>
@@ -34,8 +33,8 @@
               </td>
             </tr>
           </tbody>
-        <!-- </table> -->
-        </v-table>
+        </table>
+        <!-- </v-table> -->
       </v-card-text>
     </v-card>
   <!-- </v-col> -->
@@ -65,17 +64,26 @@ export default {
       //   { tech: "HTML", years: "3年半", level: 3 },
       //   { tech: "CSS", years: "3年半", level: 3 },
       // ],
+      windowSize: {
+        x: 0,
+        y: 0,
+      },
     };
   },
-    // mounted () {
-    //   this.onResize()
-    // },
-    // methods: {
-    //   onResize () {
-    //     this.windowSize = { x: window.innerWidth, y: window.innerHeight }
-    //     this.iconSize = window.innerHeight * 0.1
-    //   },
-    // },
+    mounted () {
+      this.onResize()
+    },
+    computed: {
+      style () {
+        return 'height: ' + this.windowSize.y * 0.8 + 'px;'
+      }
+    },
+    methods: {
+      onResize () {
+        this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+        this.iconSize = window.innerHeight * 0.1
+      },
+    },
   },
 }
 </script>
