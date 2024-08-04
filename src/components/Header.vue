@@ -4,7 +4,7 @@
     <div>
       <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded img-fluid" style="max-width: 30%; height: auto;">
     </div>
-    <nav id="gnav" class="m-3">
+    <nav id="gnav" class="mt-3">
       <ul>
         <!-- <li><i class="fa-solid fa-address-card"></i><a href="#Profile">PROFILE</a></li>
         <li><i class="fa-solid fa-square-pen"></i><a href="#skill">SKILL</a></li>

@@ -4,7 +4,7 @@
   <!-- <v-col cols="12" class="mx-3"> -->
   <v-container>
     <!-- <v-card class="mx-auto" variant="outlined" width="550" :prepend-icon="cardType.icon"> -->
-    <v-card v-resize="onResize" class="mx-auto" max-width="500" :prepend-icon="cardType.icon">
+    <v-card v-resize="onResize" class="mx-auto bg-light" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
       <template v-slot:title>{{ cardType.title }}</template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
@@ -23,8 +23,7 @@
               <td>{{ item.years }}</td>
               <td>
                 <v-rating
-                  background-color="lighten-3"
-                  color="blue"
+                  color="teal"
                   large
                   v-model=item.level
                   size="20"
@@ -76,13 +75,13 @@ export default {
     computed: {
       style () {
         // return 'height: ' + this.windowSize.y * 0.8 + 'px;'
-        return 'height: ' + this.windowSize.y * 0.95 + 'px;'
+        return 'height: ' + this.windowSize.y * 0.99 + 'px;'
       }
     },
     methods: {
       onResize () {
         this.windowSize = { x: window.innerWidth, y: window.innerHeight }
-        this.iconSize = window.innerHeight * 0.1
+        // this.iconSize = window.innerHeight * 0.1
       },
     },
   },
