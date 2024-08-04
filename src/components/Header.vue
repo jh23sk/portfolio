@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <div>
         <!-- <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded img-fluid" style="max-width: 30%; height: auto;"> -->
-        <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded" :height="windowSize.y*0.3">
+        <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded" :height="windowSize.y*0.4">
       </div>
       <nav id="gnav" class="mt-3">
         <ul>

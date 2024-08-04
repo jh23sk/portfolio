@@ -40,7 +40,6 @@ export default {
     // },
     methods: {
       onResize () {
-        console.log("★onResize");
         this.windowSize = { x: window.innerWidth, y: window.innerHeight }
         // this.iconSize = window.innerHeight * 0.1
       },
