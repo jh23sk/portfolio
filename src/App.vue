@@ -1,7 +1,7 @@
 <template>
   <span v-resize="onResize"></span>
   <Header class="pt-5" :windowSize="windowSize"/>
-  <v-divider :thickness="2" class="border-opacity-50"></v-divider>
+  <v-divider :thickness="3" color="white" class="border-opacity-50"></v-divider>
   <Profile class="mt-5"/>
   <Skill class="mt-5"/>
 </template>

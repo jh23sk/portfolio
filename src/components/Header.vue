@@ -7,9 +7,9 @@
     <!-- TODO：トップに固定したい -->
     <nav id="gnav" class="mt-3">
       <ul>
-        <li class="pr-4"><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#Profile">PROFILE</a></li>
-        <li class="pr-4"><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">SKILL</a></li>
-        <li class="pr-4"><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">WORKS</a></li>
+        <li class="pr-5"><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#Profile">PROFILE</a></li>
+        <li class="pr-5"><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">SKILL</a></li>
+        <!-- <li class="pr-4"><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">WORKS</a></li> -->
         <li><font-awesome-icon icon="fa-solid fa-envelope" class="mr-1"/><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>

@@ -1,6 +1,7 @@
 <template>
   <section class="section" id="skill">
     <h1><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><span class="section-title-css">SKILL</span></h1>
+    <p class="text">※1：直近のプロジェクトで使用しており、現在勉強中です。</p>
     <CardSkill :cardType=designCard></CardSkill>
     <CardSkill :cardType=frontCard></CardSkill>
     <CardSkill :cardType=BackCard></CardSkill>
@@ -27,18 +28,18 @@ export default {
         title: "デザイン・コーディング",
         explain: "基本的なことは一通りできます。",
         items: [
-          { tech: "HTML", years: "3年半", level: 3 },
-          { tech: "CSS", years: "3年半", level: 3 },
+          { tech: "HTML", years: "3年半", rating: 4 },
+          { tech: "CSS", years: "3年半", rating: 4 },
         ],
         icon: "mdi-monitor",
       },
       frontCard: {
         title: "フロントエンド",
-        explain: "このサイトではVue3を使用しました。",
+        explain: "このサイトではVue3, Bootstrap5を使用しました。",
         items: [
-          { tech: "HTML", years: "3年半", level: 3 },
-          { tech: "CSS", years: "3年半", level: 3 },
-          { tech: "CSS", years: "3年半", level: 3 },
+          { tech: "JavaScript", years: "3年半", rating: 4 },
+          { tech: "TypeScript ※1", years: "4ヶ月", rating: 3 },
+          { tech: "CSS", years: "3年半", rating: 3 },
         ],
         icon: "mdi-monitor",
       },
@@ -46,8 +47,8 @@ export default {
         title: "バックエンド",
         explain: "直近では〜",
         items: [
-          { tech: "HTML", years: "3年半", level: 3 },
-          { tech: "CSS", years: "3年半", level: 3 },
+          { tech: "HTML", years: "3年半", rating: 3 },
+          { tech: "CSS", years: "3年半", rating: 3 },
         ],
         icon: "mdi-monitor",
       },
@@ -55,8 +56,8 @@ export default {
         title: "DB",
         explain: "直近では〜",
         items: [
-          { tech: "HTML", years: "3年半", level: 3 },
-          { tech: "CSS", years: "3年半", level: 3 },
+          { tech: "HTML", years: "3年半", rating: 3 },
+          { tech: "CSS", years: "3年半", rating: 3 },
         ],
         icon: "mdi-database",
       },
@@ -64,8 +65,8 @@ export default {
         title: "インフラ・サーバー",
         explain: "直近では〜",
         items: [
-          { tech: "HTML", years: "3年半", level: 3 },
-          { tech: "CSS", years: "3年半", level: 3 },
+          { tech: "HTML", years: "3年半", rating: 3 },
+          { tech: "CSS", years: "3年半", rating: 3 },
         ],
         icon: "mdi-server",
       },
@@ -73,8 +74,8 @@ export default {
         title: "その他",
         explain: "直近では〜",
         items: [
-          { tech: "HTML", years: "3年半", level: 3 },
-          { tech: "CSS", years: "3年半", level: 3 },
+          { tech: "HTML", years: "3年半", rating: 3 },
+          { tech: "CSS", years: "3年半", rating: 3 },
         ],
         icon: "mdi-note",
       },
