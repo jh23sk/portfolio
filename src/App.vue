@@ -1,8 +1,8 @@
 <template>
   <span v-resize="onResize"></span>
-  <Header title="Kotomi Sasaki's Portfolio" :windowSize="windowSize"/>
-  <Profile class="m-5"/>
-  <Skill class="m-5"/>
+  <Header title="Kotomi Sasaki's Portfolio" :windowSize="windowSize" class="pt-5"/>
+  <Profile class="mt-5"/>
+  <Skill class="mt-5"/>
 </template>
 
 <script>
@@ -33,11 +33,11 @@ export default {
     mounted () {
       this.onResize()
     },
-    computed: {
-      style () {
-        return 'height: ' + this.windowSize.y * 0.9 + 'px;'
-      }
-    },
+    // computed: {
+    //   style () {
+    //     return 'height: ' + this.windowSize.y * 0.9 + 'px;'
+    //   }
+    // },
     methods: {
       onResize () {
         console.log("★onResize");

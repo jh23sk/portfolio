@@ -1,6 +1,6 @@
 <template>
   <header>
-    <v-container>
+    <!-- <v-container> -->
       <h1>{{ title }}</h1>
       <div>
         <!-- <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded img-fluid" style="max-width: 30%; height: auto;"> -->
@@ -8,15 +8,12 @@
       </div>
       <nav id="gnav" class="mt-3">
         <ul>
-          <!-- <li><i class="fa-solid fa-address-card"></i><a href="#Profile">PROFILE</a></li>
-          <li><i class="fa-solid fa-square-pen"></i><a href="#skill">SKILL</a></li>
-          <li><i class="fa-solid fa-envelope"></i><a href="#contact">CONTACT</a></li> -->
-          <li><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#Profile">PROFILE</a></li>
-          <li><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">SKILL</a></li>
+          <li class="pr-4"><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#Profile">PROFILE</a></li>
+          <li class="pr-4"><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">SKILL</a></li>
           <li><font-awesome-icon icon="fa-solid fa-envelope" class="mr-1"/><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-    </v-container>
+    <!-- </v-container> -->
   </header>
 </template>
 
