@@ -3,18 +3,19 @@
   <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <!-- <v-col cols="12" class="mx-3"> -->
   <v-container>
-    <!-- <v-card class="mx-auto" variant="outlined" width="400" :prepend-icon="cardType.icon"> -->
-    <v-card class="mx-auto w-50" variant="outlined" :prepend-icon="cardType.icon">
+    <v-card class="mx-auto" variant="outlined" width="550" :prepend-icon="cardType.icon">
+    <!-- <v-card class="mx-auto w-50" variant="outlined" :prepend-icon="cardType.icon"> -->
     <!-- <v-card v-resize="onResize" class="mx-auto" width="400" prepend-icon="mdi-monitor"> -->
       <template v-slot:title>{{ cardType.title }}</template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <table class="table">
+        <!-- <table class="table"> -->
+        <v-table>
           <thead>
             <tr>
-              <th scope="col">技術</th>
-              <th scope="col">経験年数</th>
-              <th scope="col">レベル</th>
+              <th scope="col" class="text-center">技術</th>
+              <th scope="col" class="text-center">経験年数</th>
+              <th scope="col" class="text-center">レベル</th>
             </tr>
           </thead>
           <tbody>
@@ -33,7 +34,8 @@
               </td>
             </tr>
           </tbody>
-        </table>
+        <!-- </table> -->
+        </v-table>
       </v-card-text>
     </v-card>
   <!-- </v-col> -->
