@@ -1,9 +1,7 @@
 <template>
-  <!-- <div class="box m-0" height="300px" style="background:tomato;"></div> -->
   <Header title="Kotomi Sasaki's Portfolio" class="pt-5"/>
   <Profile class="m-5"/>
   <Skill class="m-5"/>
-  <!-- <sample msg="Kotomi Sasaki's Portfolio"/> -->
 </template>
 
 <script>
@@ -19,6 +17,32 @@ export default {
     Profile,
     Skill,
   },
+  data() {
+    return {
+      // items: [
+      //   { tech: "HTML", years: "3年半", level: 3 },
+      //   { tech: "CSS", years: "3年半", level: 3 },
+      // ],
+      windowSize: {
+        x: 0,
+        y: 0,
+      },
+    };
+  },
+    // mounted () {
+    //   this.onResize()
+    // },
+    // computed: {
+    //   style () {
+    //     return 'height: ' + this.windowSize.y * 0.9 + 'px;'
+    //   }
+    // },
+    // methods: {
+    //   onResize () {
+    //     this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+    //     // this.iconSize = window.innerHeight * 0.1
+    //   },
+    // },
 }
 
 // useHead({

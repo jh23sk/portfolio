@@ -34,7 +34,7 @@ export default {
       },
       frontCard: {
         title: "フロントエンド",
-        explain: "直近のプロジェクトではVue.jsを使用しています。このサイトでも使用しました。",
+        explain: "このサイトではVue.jsを使用しました。",
         items: [
           { tech: "HTML", years: "3年半", level: 3 },
           { tech: "CSS", years: "3年半", level: 3 },
