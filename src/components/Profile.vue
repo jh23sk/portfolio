@@ -5,7 +5,7 @@
       <v-container>
         <v-card elevation="16" class="mx-auto" max-width="600" style="background-color: rgba(255, 255, 255, 0.7);">
           <v-card-text>
-            <p class="text m-0" style="line-height: 1.8;">
+            <p class="text m-0 px-3 py-1" style="line-height: 1.8;">
               <!--
               -->はじめまして。佐々木琴美と申します。<br><!--
               -->宮城県仙台市出身・在住の、猫好きの28歳です。<br><!--
