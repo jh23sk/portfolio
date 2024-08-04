@@ -11,7 +11,8 @@
         <!-- <v-table> --><!-- これ使うと、テーブルの下に横スクロールのバーが出る -->
           <thead class="table-secondary">
             <tr>
-              <th scope="col" class="text-center" width="40%">技術</th>
+              <th scope="col" class="text-center" width="37%">技術</th>
+              <th scope="col" class="text-center" width="3%"></th>
               <th scope="col" class="text-center" width="25%">経験年数</th>
               <th scope="col" class="text-center" width="35%">レベル</th>
             </tr>
@@ -19,6 +20,28 @@
           <tbody>
             <tr v-for="(item, index) in cardType.items" :key="index">
               <td>{{ item.tech }}</td>
+              <td>
+                <VTooltip
+                  v-if="item.note1"
+                  open-on-hover
+                  distance="8"
+                  class="v-tooltip"
+                  placement="top"
+                >
+                  <span>※1</span>
+                  <template #popper>{{ noteComment.note1 }}</template>
+                </VTooltip>
+                <VTooltip
+                  v-else-if="item.note2"
+                  open-on-hover
+                  distance="8"
+                  class="v-tooltip"
+                  placement="top"
+                >
+                  <span>※2</span>
+                  <template #popper>{{ noteComment.note2 }}</template>
+                </VTooltip>
+              </td>
               <td>{{ item.years }}</td>
               <td>
                 <v-rating
@@ -42,19 +65,25 @@
 export default {
   name: 'cmp-card-skill',
   props: {
-    cardType : {
+    cardType: {
       title: String,
       explains: String,
       items: [
         {
           tech: String,
           years: String,
-          rating: String,
+          note1: Boolean,
+          note2: Boolean,
+          rating: Number,
           icon: String,
         }
       ],
       icon: String,
     },
+    noteComment:{
+      note1: String,
+      note2: String,
+    }
   },
 }
 </script>

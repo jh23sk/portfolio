@@ -1,17 +1,17 @@
 br.pc-only {
   display: inline;
 }
-br.sp-only {
+/* br.sp-only {
   display: none;
-}
+} */
 
 @media screen and (max-width: 750px){
   br.pc-only {
       display: none;
   }
-  br.sp-only {
+  /* br.sp-only {
       display: inline;
-  }
+  } */
 }
 
 /* #gnav {
