@@ -1,13 +1,3 @@
-/* .pc-only {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  .pc-only {
-      display: block;
-  }
-} */
-
 br.pc-only {
   display: inline;
 }
