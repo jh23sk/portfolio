@@ -75,7 +75,8 @@ export default {
     },
     computed: {
       style () {
-        return 'height: ' + this.windowSize.y * 0.8 + 'px;'
+        // return 'height: ' + this.windowSize.y * 0.8 + 'px;'
+        return 'height: ' + this.windowSize.y * 0.95 + 'px;'
       }
     },
     methods: {
