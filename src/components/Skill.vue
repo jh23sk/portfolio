@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="skill">
-    <h1 class=""><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><span class="section-title-css">SKILL</span></h1>
+    <h1><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><span class="section-title-css">SKILL</span></h1>
     <CardSkill :cardType=designCard></CardSkill>
     <CardSkill :cardType=frontCard></CardSkill>
     <CardSkill :cardType=BackCard></CardSkill>

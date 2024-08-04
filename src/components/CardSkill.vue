@@ -3,11 +3,11 @@
   <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <v-container class="px-0">
     <!-- <v-card v-resize="$emit('onResize')" class="mx-auto bg-light" max-width="500" variant="outlined" :prepend-icon="cardType.icon"> -->
-    <v-card class="mx-auto bg-light" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
+    <v-card class="mx-auto bg-white" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
       <template v-slot:title>{{ cardType.title }}</template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <table class="table">
+        <table class="table m-0">
         <!-- <v-table> -->
           <thead>
             <tr>

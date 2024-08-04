@@ -1,15 +1,11 @@
 <template>
   <section class="section" id="Profile">
-    <h1 class=""><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><span class="section-title-css">PROFILE</span></h1>
-    <!-- <v-card>
-      <v-card-text>
-      </v-card-text>
-    </v-card> -->
+    <h1><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><span class="section-title-css">PROFILE</span></h1>
     <!-- <v-card v-resize="$emit('onResize')" class="mx-auto bg-white" max-width="600" variant="outlined"> -->
-    <v-card class="mx-auto bg-white" max-width="600" variant="outlined">
+    <v-card class="mx-auto" max-width="600" style="background-color: rgba(255, 255, 255, 0.6);">
       <v-card-text>
-        <p class="text m-0">
-          初めまして。佐々木琴美と申します。<br>
+        <p class="text m-0" style="line-height: 1.6;">
+          はじめまして。佐々木琴美と申します。<br>
           宮城県仙台市出身・在住の、猫好きの28歳です。<br>
           社会人歴は6年目、IT業界歴は4年目（2024年8月で勤続3年）です。<br>
           文系の高校・大学を卒業後、新卒で不動産会社に入社し<br>

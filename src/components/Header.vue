@@ -1,19 +1,22 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
-    <div>
-      <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded img-fluid" style="max-width: 30%; height: auto;">
-    </div>
-    <nav id="gnav" class="mt-3">
-      <ul>
-        <!-- <li><i class="fa-solid fa-address-card"></i><a href="#Profile">PROFILE</a></li>
-        <li><i class="fa-solid fa-square-pen"></i><a href="#skill">SKILL</a></li>
-        <li><i class="fa-solid fa-envelope"></i><a href="#contact">CONTACT</a></li> -->
-        <li><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#Profile">PROFILE</a></li>
-        <li><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">SKILL</a></li>
-        <li><font-awesome-icon icon="fa-solid fa-envelope" class="mr-1"/><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
+    <v-container>
+      <h1>{{ title }}</h1>
+      <div>
+        <!-- <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded img-fluid" style="max-width: 30%; height: auto;"> -->
+        <img alt="愛猫のごましおです" src="../assets/img/profile.png" class="rounded" :height="windowSize.y*0.3">
+      </div>
+      <nav id="gnav" class="mt-3">
+        <ul>
+          <!-- <li><i class="fa-solid fa-address-card"></i><a href="#Profile">PROFILE</a></li>
+          <li><i class="fa-solid fa-square-pen"></i><a href="#skill">SKILL</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="#contact">CONTACT</a></li> -->
+          <li><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#Profile">PROFILE</a></li>
+          <li><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill">SKILL</a></li>
+          <li><font-awesome-icon icon="fa-solid fa-envelope" class="mr-1"/><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </v-container>
   </header>
 </template>
 
@@ -23,7 +26,11 @@
 export default {
   name: 'cmp-header',
   props: {
-    title: String
+    title: String,
+    windowSize: {
+        x: String,
+        y: String,
+      },
   },
 }
 
