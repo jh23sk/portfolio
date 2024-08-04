@@ -1,10 +1,12 @@
 <template>
-  <!-- https://pictogrammers.com/library/mdi/icon/monitor/ -->
-  <v-col cols="12">
-    <v-card class="mx-auto m-3" width="400" prepend-icon="mdi-monitor">
-      <template v-slot:title>
-        {{ cardType.title }}
-      </template>
+  <!-- 【mdi一覧】https://pictogrammers.com/library/mdi/icon/monitor/ -->
+  <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
+  <!-- <v-col cols="12" class="mx-3"> -->
+  <v-container>
+    <!-- <v-card class="mx-auto" variant="outlined" width="400" :prepend-icon="cardType.icon"> -->
+    <v-card class="mx-auto w-50" variant="outlined" :prepend-icon="cardType.icon">
+    <!-- <v-card v-resize="onResize" class="mx-auto" width="400" prepend-icon="mdi-monitor"> -->
+      <template v-slot:title>{{ cardType.title }}</template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
         <table class="table">
@@ -21,7 +23,7 @@
               <td>{{ item.years }}</td>
               <td>
                 <v-rating
-                  background-color="orange lighten-3"
+                  background-color="lighten-3"
                   color="blue"
                   large
                   v-model=item.level
@@ -34,22 +36,14 @@
         </table>
       </v-card-text>
     </v-card>
-  </v-col>
+  <!-- </v-col> -->
+  </v-container>
 </template>
 
 <script>
 export default {
   name: 'cmp-card-skill',
   props: {
-    // title: String,
-    // explain: String,
-    // items: [
-    //   {
-    //     tech: String,
-    //     years: String,
-    //     level: String,
-    //   }
-    // ],
     cardType : {
       title: String,
       explains: String,
@@ -58,9 +52,28 @@ export default {
           tech: String,
           years: String,
           level: String,
+          icon: String,
         }
-      ]
-    }
+      ],
+      icon: String,
+    },
+  data() {
+    return {
+      // items: [
+      //   { tech: "HTML", years: "3年半", level: 3 },
+      //   { tech: "CSS", years: "3年半", level: 3 },
+      // ],
+    };
+  },
+    // mounted () {
+    //   this.onResize()
+    // },
+    // methods: {
+    //   onResize () {
+    //     this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+    //     this.iconSize = window.innerHeight * 0.1
+    //   },
+    // },
   },
 }
 </script>
