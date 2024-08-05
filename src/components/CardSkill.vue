@@ -19,8 +19,8 @@
           </thead>
           <tbody>
             <tr v-for="(item, index) in cardType.items" :key="index">
-              <td>{{ item.tech }}</td>
-              <td>
+              <td width="42%">{{ item.tech }}</td>
+              <td width="3%">
                 <VTooltip v-if="item.note1" open-on-hover distance="8" class="v-tooltip" placement="top">
                   <span>※1</span>
                   <template #popper>{{ noteComment.note1 }}</template>
@@ -30,8 +30,8 @@
                   <template #popper>{{ noteComment.note2 }}</template>
                 </VTooltip>
               </td>
-              <td>{{ item.years }}</td>
-              <td>
+              <td width="25%">{{ item.years }}</td>
+              <td width="30%">
                 <v-rating color="teal" large v-model=item.rating size="20" readonly></v-rating>
               </td>
             </tr>
