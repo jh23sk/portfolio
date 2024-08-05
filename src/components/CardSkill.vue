@@ -6,20 +6,20 @@
       <template v-slot:title><span class="fw-bold">{{ cardType.title }}</span></template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <table class="table table-bordered m-0">
-        <!-- <table class="table m-0"> -->
+        <!-- <table class="table table-bordered m-0"> -->
+        <table class="table m-0">
         <!-- <v-table> --><!-- これ使うと、テーブルの下に横スクロールのバーが出る -->
           <thead class="table-secondary">
             <tr class="text-center ">
               <th scope="col" class="px-0" width="35%">技術</th>
               <th scope="col" class="px-0" width="10%"></th>
-              <th scope="col" class="px-0" width="25%">経験年数</th>
-              <th scope="col" class="px-0" width="30%">レベル</th>
+              <th scope="col" class="px-0" width="23%">経験年数</th>
+              <th scope="col" class="px-0" width="32%">レベル</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(item, index) in cardType.items" :key="index">
-              <td>{{ item.tech }}</td>
+              <td class="px-1">{{ item.tech }}</td>
               <td class="px-0">
                 <VTooltip v-if="item.note1" open-on-hover distance="8" class="v-tooltip" placement="top">
                   <span>※1</span>
@@ -32,7 +32,7 @@
               </td>
               <td>{{ item.years }}</td>
               <td>
-                <v-rating color="teal" large v-model=item.rating size="17" readonly></v-rating>
+                <v-rating color="teal" large v-model=item.rating size="16" readonly></v-rating>
               </td>
             </tr>
           </tbody>

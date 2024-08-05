@@ -1,0 +1,18 @@
+2340
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch develop
+# Your branch is up to date with 'origin/develop'.
+#
+# Changes to be committed:
+#	modified:   docs/index.html
+#	deleted:    docs/js/index.090bb964.js
+#	deleted:    docs/js/index.090bb964.js.map
+#	new file:   docs/js/index.7d1fc317.js
+#	new file:   docs/js/index.7d1fc317.js.map
+#	modified:   src/App.vue
+#	modified:   src/components/CardSkill.vue
+#	modified:   src/components/Header.vue
+#	modified:   src/components/Profile.vue
+#

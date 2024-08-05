@@ -1,5 +1,6 @@
 <template>
   <section class="section" id="profile">
+    <v-col crass="" style="height: 70px;"></v-col>
     <h2 class="display-5">
       <font-awesome-icon icon="fa-solid fa-address-card" class="mr-3"/>
       <span class="section-title-css">Profile</span>
