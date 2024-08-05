@@ -68,3 +68,7 @@ a {
 p {
   font-size: 15px;
 }
+
+table {
+  table-layout: fixed;
+}

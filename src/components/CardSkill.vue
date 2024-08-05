@@ -6,13 +6,13 @@
       <template v-slot:title><span class="fw-bold">{{ cardType.title }}</span></template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <table class="table table-bordered m-0">
-        <!-- <table class="table m-0"> -->
+        <!-- <table class="table table-bordered m-0"> -->
+        <table class="table m-0">
         <!-- <v-table> --><!-- これ使うと、テーブルの下に横スクロールのバーが出る -->
           <thead class="table-secondary">
             <tr>
-              <th scope="col" class="text-center" width="42%">技術</th>
-              <th scope="col" class="text-center" width="3%"></th>
+              <th scope="col" class="text-center" width="38%">技術</th>
+              <th scope="col" class="text-center" width="7%"></th>
               <th scope="col" class="text-center" width="28%">経験年数</th>
               <th scope="col" class="text-center" width="27%">レベル</th>
             </tr>
