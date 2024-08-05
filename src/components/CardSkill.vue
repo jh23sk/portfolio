@@ -1,14 +1,10 @@
 <template>
-  <!-- 【mdi一覧】https://pictogrammers.com/library/mdi/ -->
-  <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <v-container>
     <v-card class="mx-auto bg-clear-white" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
       <template v-slot:title><span class="fw-bold">{{ cardType.title }}</span></template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <!-- <table class="table table-bordered m-0"> -->
         <table class="table m-0">
-        <!-- <v-table> --><!-- これ使うと、テーブルの下に横スクロールのバーが出る -->
           <thead class="table-secondary">
             <tr class="text-center ">
               <th scope="col" class="px-0" width="35%">技術</th>
@@ -37,7 +33,6 @@
             </tr>
           </tbody>
         </table>
-        <!-- </v-table> -->
       </v-card-text>
     </v-card>
   </v-container>
@@ -70,20 +65,5 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-} */
 </style>
