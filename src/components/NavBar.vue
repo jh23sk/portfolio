@@ -21,4 +21,7 @@ export default {
 </script>
 
 <style scoped>
+a {
+  font-size: 18px;
+}
 </style>

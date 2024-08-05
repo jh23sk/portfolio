@@ -48,11 +48,10 @@ export default {
       items: [
         {
           tech: String,
-          years: String,
           note1: Boolean,
           note2: Boolean,
+          years: String,
           rating: Number,
-          icon: String,
         }
       ],
       icon: String,

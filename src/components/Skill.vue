@@ -6,10 +6,10 @@
       <span class="section-title-css">Skill</span>
     </h2>
     <p class="text px-3 mb-1">
-     ※1 {{ noteComment.note1 }}
+      ※1 {{ noteComment.note1 }}
     </p>
     <p class="text px-3 mb-1">
-     ※2 {{ noteComment.note2 }}
+      ※2 {{ noteComment.note2 }}
     </p>
     <CardSkill :cardType=frontCard :noteComment=noteComment></CardSkill>
     <CardSkill :cardType=BackCard :noteComment=noteComment></CardSkill>
