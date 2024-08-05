@@ -2,7 +2,7 @@
   <!-- 【mdi一覧】https://pictogrammers.com/library/mdi/ -->
   <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <v-container>
-    <v-card class="mx-auto bg-white" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
+    <v-card class="mx-auto bg-clear-white" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
       <template v-slot:title><span class="fw-bold">{{ cardType.title }}</span></template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>

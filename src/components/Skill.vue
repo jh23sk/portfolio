@@ -1,5 +1,6 @@
 <template>
   <section class="section" id="skill">
+    <v-col class="" style="height: 70px;"></v-col>
     <h2 class="display-5">
       <font-awesome-icon icon="fa-solid fa-square-pen" class="mr-3"/>
       <span class="section-title-css">Skill</span>

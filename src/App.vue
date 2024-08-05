@@ -1,42 +1,38 @@
 <template>
   <v-layout>
-    <v-app-bar color="white" id="v-app-bar" app>
-      <v-app-bar-title class="text-left">
-        Kotomi Sasaki's Portfolio
-      </v-app-bar-title>
-      <template v-slot:append>
-        <font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#profile" class="text-black-50 mr-2">Profile</a>
-        <font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill" class="text-black-50 mr-2">Skill</a>
-        <font-awesome-icon icon="fa-solid fa-cube" class="mr-1"/><a href="#works" class="text-black-50 mr-2">Works</a>
-        <font-awesome-icon icon="fa-solid fa-envelope" class="mr-1"/><a href="#contact" class="text-black-50 mr-2">Contact</a>
-      </template>
-    </v-app-bar>
-
+    <NavBar/>
     <v-main>
       <span v-resize="onResize"></span>
       <Header class="pt-5" :windowSize="windowSize"/>
-      <!-- <v-divider :thickness="3" color="white" class="border-opacity-50"></v-divider> -->
       <Profile class=""/>
-      <Skill class="mt-5"/>
-      <Works class="mt-5"/>
+      <Skill class=""/>
+      <Works class=""/>
+      <Contact class="mb-5"/>
+      <Footer class=""/>
     </v-main>
   </v-layout>
 </template>
 
 <script>
+import NavBar from './components/NavBar.vue'
 import Header from './components/Header.vue'
 import Profile from './components/Profile.vue';
 import Skill from './components/Skill.vue';
 import Works from './components/Works.vue';
+import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 // import { useHead } from '@unhead/vue'
 
 export default {
   name: 'App',
   components: {
+    NavBar,
     Header,
     Profile,
     Skill,
     Works,
+    Contact,
+    Footer,
   },
   data() {
     return {

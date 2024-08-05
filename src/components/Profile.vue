@@ -1,14 +1,14 @@
 <template>
   <section class="section" id="profile">
-    <v-col crass="" style="height: 70px;"></v-col>
+    <v-col class="" style="height: 70px;"></v-col>
     <h2 class="display-5">
       <font-awesome-icon icon="fa-solid fa-address-card" class="mr-3"/>
       <span class="section-title-css">Profile</span>
     </h2>
-      <v-container>
-        <v-card elevation="16" class="mx-auto" max-width="600" style="background-color: rgba(255, 255, 255, 0.7);">
+      <v-container class="pt-2">
+        <v-card elevation="16" class="mx-auto bg-clear-white" max-width="600" style="">
           <v-card-text>
-            <p class="text m-0 px-3 py-1" style="line-height: 1.8;">
+            <p class="text m-0 px-3 py-1" style="">
               <!--
               -->はじめまして。佐々木琴美と申します。<br><!--
               -->宮城県仙台市出身・在住の、<br class="sp-only"><!--

@@ -1,11 +1,15 @@
 <template>
-  <header>
-    <h1 class="display-4">Kotomi Sasaki's Portfolio</h1>
-    <VTooltip open-on-hover distance="8" class="v-tooltip" placement="top">
-      <img alt="愛猫の画像" src="../assets/img/profile.png" class="rounded" :height="windowSize.y*0.4">
-      <template #popper>愛猫のごま＆しおです</template>
-    </VTooltip>
-  </header>
+  <v-app-bar class="" app>
+    <v-app-bar-title class="text-left pc-only">
+      Kotomi Sasaki's Portfolio
+    </v-app-bar-title>
+    <template v-slot:append>
+      <font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><a href="#profile" class="text-black-50 mr-3">Profile</a>
+      <font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><a href="#skill" class="text-black-50 mr-3">Skill</a>
+      <font-awesome-icon icon="fa-solid fa-cube" class="mr-1"/><a href="#works" class="text-black-50 mr-3">Works</a>
+      <font-awesome-icon icon="fa-solid fa-envelope" class="mr-1"/><a href="#contact" class="text-black-50 mr-3">Contact</a>
+    </template>
+  </v-app-bar>
 </template>
 
 <script>
