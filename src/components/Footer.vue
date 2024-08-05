@@ -1,7 +1,8 @@
 <template>
   <v-footer class="d-flex align-center justify-center">
     <div>
-      <p class="my-2">Copyright &copy; 2024 Kotomi Sasaki. All Rights Reserved.</p>
+      <p class="my-2">
+        Copyright &copy; 2024 Kotomi Sasaki. <br class="sp-only">All Rights Reserved.</p>
     </div>
   </v-footer>
 </template>

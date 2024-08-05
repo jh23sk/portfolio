@@ -11,8 +11,8 @@
           <!-- <v-card-title class="fw-bold">ポートフォリオ</v-card-title> -->
           <v-card-text>
             <p class="text m-0 px-3 py-1">
-              ご連絡の際は、<br>
-              以下のメールアドレスへお願いいたします。
+              ご連絡の際は際はこちらの<br>
+              メールアドレスへお願いいたします。
               <span class="fw-bold text-black-50">
                 s13ak44@gmail.com
               </span>
