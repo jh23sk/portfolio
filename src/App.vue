@@ -4,12 +4,14 @@
   <v-divider :thickness="3" color="white" class="border-opacity-50"></v-divider>
   <Profile class="mt-5"/>
   <Skill class="mt-5"/>
+  <Works class="mt-5"/>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Profile from './components/Profile.vue';
 import Skill from './components/Skill.vue';
+import Works from './components/Works.vue';
 // import { useHead } from '@unhead/vue'
 
 export default {
@@ -18,6 +20,7 @@ export default {
     Header,
     Profile,
     Skill,
+    Works,
   },
   data() {
     return {

@@ -1,35 +1,39 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 import vuetify from "./assets/js/vuetify";
-import { createHead } from '@unhead/vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+// import { createHead } from '@unhead/vue'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './assets/style/common.css';
+// VTooltip
 import { Tooltip } from "floating-vue";
-import "floating-vue/dist/style.css";//デフォルトcss
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
+import "floating-vue/dist/style.css";
+// fontawesome
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+// TODO：使わなくなったものあれば削除する faUserとか
 import {
   faUser,
   faAddressCard,
   faSquarePen,
+  faCube,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faUser, faAddressCard, faSquarePen, faEnvelope);
+library.add(faUser, faAddressCard, faSquarePen, faCube, faEnvelope);
 
-const app = createApp(App)
-app.use(vuetify)
 
+const app = createApp(App);
+app.use(vuetify);
+
+// TODO：unhead使わないならuninstallする
 // Vue3のOption APIではmixinの登録が必要
 // https://blog.kurodigi.com/posts/vue3-custom-head
-const head = createHead()
-app.use(head)
+// const head = createHead()
+// app.use(head)
 
-app.component('font-awesome-icon', FontAwesomeIcon)
 app.component("VTooltip", Tooltip);
-app.mount('#app')
+app.component('font-awesome-icon', FontAwesomeIcon);
+app.mount('#app');
 
 // パターン1
 // createApp(App).mount('#app')
@@ -61,10 +65,4 @@ app.mount('#app')
 // app.use(router)
 // app.mount('#app')
 
-// ---------------------------------------
-// font awesome
-
-
-
-// ---------------------------------------
 

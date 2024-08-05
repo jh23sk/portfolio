@@ -2,12 +2,12 @@
   <!-- 【mdi一覧】https://pictogrammers.com/library/mdi/ -->
   <!-- 【レスポンシブ】https://qiita.com/nthm/items/5ddc4b789617bcd9ce6c -->
   <v-container>
-    <!-- <v-card v-resize="$emit('onResize')" class="mx-auto bg-light" max-width="500" variant="outlined" :prepend-icon="cardType.icon"> -->
     <v-card class="mx-auto bg-white" max-width="500" variant="outlined" :prepend-icon="cardType.icon">
       <template v-slot:title><span class="fw-bold">{{ cardType.title }}</span></template>
       <v-card-text>
         <p class="text">{{ cardType.explain }}</p>
-        <table class="table table-sm m-0">
+        <!-- <table class="table table-bordered m-0"> -->
+        <table class="table m-0">
         <!-- <v-table> --><!-- これ使うと、テーブルの下に横スクロールのバーが出る -->
           <thead class="table-secondary">
             <tr>
@@ -21,36 +21,18 @@
             <tr v-for="(item, index) in cardType.items" :key="index">
               <td>{{ item.tech }}</td>
               <td>
-                <VTooltip
-                  v-if="item.note1"
-                  open-on-hover
-                  distance="8"
-                  class="v-tooltip"
-                  placement="top"
-                >
+                <VTooltip v-if="item.note1" open-on-hover distance="8" class="v-tooltip" placement="top">
                   <span>※1</span>
                   <template #popper>{{ noteComment.note1 }}</template>
                 </VTooltip>
-                <VTooltip
-                  v-else-if="item.note2"
-                  open-on-hover
-                  distance="8"
-                  class="v-tooltip"
-                  placement="top"
-                >
+                <VTooltip v-else-if="item.note2" open-on-hover distance="8" class="v-tooltip" placement="top">
                   <span>※2</span>
                   <template #popper>{{ noteComment.note2 }}</template>
                 </VTooltip>
               </td>
               <td>{{ item.years }}</td>
               <td>
-                <v-rating
-                  color="teal"
-                  large
-                  v-model=item.rating
-                  size="20"
-                  readonly
-                ></v-rating>
+                <v-rating color="teal" large v-model=item.rating size="20" readonly></v-rating>
               </td>
             </tr>
           </tbody>

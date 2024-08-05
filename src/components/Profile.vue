@@ -1,7 +1,9 @@
 <template>
-  <section class="section" id="Profile">
-    <h1><font-awesome-icon icon="fa-solid fa-address-card" class="mr-1"/><span class="section-title-css">PROFILE</span></h1>
-    <!-- <v-card v-resize="$emit('onResize')" class="mx-auto bg-white" max-width="600" variant="outlined"> -->
+  <section class="section" id="profile">
+    <h2 class="display-5">
+      <font-awesome-icon icon="fa-solid fa-address-card" class="mr-3"/>
+      <span class="section-title-css">Profile</span>
+    </h2>
       <v-container>
         <v-card elevation="16" class="mx-auto" max-width="600" style="background-color: rgba(255, 255, 255, 0.7);">
           <v-card-text>
@@ -13,13 +15,14 @@
               -->社会人歴は6年目、IT業界歴は4年目<br class="sp-only"><!--
               -->（2024年8月で経験年数3年）です。<br><!--
               -->文系の高校・大学を卒業後、新卒で不動産会社に入社し<br class="pc-only"><!--
-              -->賃貸部門の事務として勤務しました。<br><!--
+              -->賃貸部門の事務として勤務していました。<br><!--
               -->業務で賃貸管理システムを使用したことがきっかけで、<br class="pc-only"><!--
               -->システムを使う側から作る側になってみたいと感じ、<br class="pc-only"><!--
               -->エンジニアを目指して職業訓練校に入所しました。<br><!--
               -->卒業後は現在の勤務先であるSES企業に入社し、<br class="pc-only"><!--
               -->業務システムの開発（基本設計〜導入）に携わっています。
             </p>
+            <!-- TODO：この下に時系列の図を入れたい -->
           </v-card-text>
         </v-card>
       </v-container>

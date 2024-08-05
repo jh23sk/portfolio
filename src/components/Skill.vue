@@ -1,17 +1,18 @@
 <template>
   <section class="section" id="skill">
-    <h1><font-awesome-icon icon="fa-solid fa-square-pen" class="mr-1"/><span class="section-title-css">SKILL</span></h1>
+    <h2 class="display-5">
+      <font-awesome-icon icon="fa-solid fa-square-pen" class="mr-3"/>
+      <span class="section-title-css">Skill</span>
+    </h2>
     <p class="text px-3 mb-1">
-     ※1：{{ noteComment.note1 }}
+     ※1 {{ noteComment.note1 }}
     </p>
     <p class="text px-3 mb-1">
-     ※2：{{ noteComment.note2 }}
+     ※2 {{ noteComment.note2 }}
     </p>
-    <!-- <CardSkill :cardType=designCard></CardSkill> -->
     <CardSkill :cardType=frontCard :noteComment=noteComment></CardSkill>
     <CardSkill :cardType=BackCard :noteComment=noteComment></CardSkill>
     <CardSkill :cardType=DBCard :noteComment=noteComment></CardSkill>
-    <!-- <CardSkill :cardType=ServerCard></CardSkill> -->
     <CardSkill :cardType=OtherCard :noteComment=noteComment></CardSkill>
   </section>
 </template>
@@ -29,15 +30,6 @@ export default {
   },
   data() {
     return {
-    //   designCard: {
-    //     title: "デザイン・コーディング",
-    //     explain: "基本的なことは一通りできます。",
-    //     items: [
-    //     { tech: "HTML", note1: false, note2: false, years: "3年半", rating: 4 },
-    //     { tech: "CSS", note1: false, note2: false, years: "3年半", rating: 4 },
-    //   ],
-    //   icon: "mdi-monitor",
-    // },
       frontCard: {
         title: "フロントエンド",
         explain: "このサイトではVue3, Bootstrap5等を使用しました。",
@@ -46,10 +38,8 @@ export default {
           { tech: "CSS", note1: false, note2: false, years: "3年半", rating: 4 },
           { tech: "Bootstrap", note1: false, note2: false, years: "3年半", rating: 4 },
           { tech: "JavaScript", note1: false, note2: false, years: "3年半", rating: 4 },
-          { tech: "TypeScript", note1: true, note2:false, years: "4ヶ月", rating: 3 },
           { tech: "jQuery", note1: false, note2: false, years: "3年半", rating: 4 },
           { tech: "Vue.js", note1: true, note2:false, years: "1ヶ月", rating: 3 },
-          { tech: "Node.js", note1: true, note2:false, years: "4ヶ月", rating: 2 },
         ],
         icon: "mdi-monitor",
       },
@@ -59,8 +49,9 @@ export default {
         items: [
           { tech: "VB.NET(ASP.NET)", note1: false, note2: false, years: "2年半", rating: 4 },
           { tech: "Python(Django, Flask)", note1: true, note2:false, years: "半年", rating: 3 },
+          { tech: "TypeScript(Express + Node.js)", note1: true, note2:false, years: "4ヶ月", rating: 2 },
           { tech: "Java(JSP/サーブレット)", note1: false, note2:true, years: "半年", rating: 3 },
-          { tech: "PHP(Laravel)", note1: false, note2: false, years: "半年", rating: 2 },
+          { tech: "PHP(Laravel)", note1: false, note2: true, years: "半年", rating: 2 },
         ],
         icon: "mdi-monitor",
       },
@@ -74,21 +65,12 @@ export default {
         ],
         icon: "mdi-database",
       },
-      // ServerCard: {
-      //   title: "インフラ・サーバー",
-      //   explain: "直近では〜",
-      //   items: [
-      //     { tech: "HTML", note1: false, note2: false, years: "3年半", rating: 3 },
-      //     { tech: "CSS", note1: false, note2: false, years: "3年半", rating: 3 },
-      //   ],
-      //   icon: "mdi-server",
-      // },
       OtherCard: {
         title: "その他",
         explain: "AWSはCodeCommit, CodeBuild, CodeDeploy, CodePipeline,CloudWatchを使用しています。",
         items: [
           { tech: "Windowsバッチ", note1: false, note2: false, years: "2年半", rating: 3 },
-          { tech: "SVN", note1: false, note2: false, years: "2年半", rating: 3 },
+          { tech: "SVN", note1: false, note2: false, years: "2年半", rating: 4 },
           { tech: "Git", note1: true, note2: false, years: "4ヶ月", rating: 3 },
           { tech: "AWS", note1: true, note2: false, years: "4ヶ月", rating: 2 },
           { tech: "Docker", note1: true, note2: false, years: "4ヶ月", rating: 3 },
