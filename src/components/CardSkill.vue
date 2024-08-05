@@ -11,10 +11,10 @@
         <!-- <v-table> --><!-- これ使うと、テーブルの下に横スクロールのバーが出る -->
           <thead class="table-secondary">
             <tr>
-              <th scope="col" class="text-center" width="37%">技術</th>
+              <th scope="col" class="text-center" width="42%">技術</th>
               <th scope="col" class="text-center" width="3%"></th>
               <th scope="col" class="text-center" width="25%">経験年数</th>
-              <th scope="col" class="text-center" width="35%">レベル</th>
+              <th scope="col" class="text-center" width="30%">レベル</th>
             </tr>
           </thead>
           <tbody>
